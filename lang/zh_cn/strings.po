@@ -4543,7 +4543,7 @@ msgstr "发光石"
 
 #: ../../script/space.js:469
 msgid "the beacon pulses gently as the ship glides through space.<br>coordinates are locked. nothing to do but wait."
-msgstr "当飞船在太空中飞行时，信标发出柔和的脉冲<br>坐标已被锁定。剩下的只有等待。
+msgstr "当飞船在太空中飞行时，信标发出柔和的脉冲<br>坐标已被锁定。剩下的只有等待。"
 
 #: ../../script/space.js:477
 msgid "the beacon glows a solid blue, and then goes dim. the ship slows.<br>gradually, the vast wanderer homefleet comes into view.<br>massive worldships drift unnaturally through clouds of debris, scarred and dead."
