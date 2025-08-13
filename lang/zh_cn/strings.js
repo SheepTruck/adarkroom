@@ -81,7 +81,7 @@ _.setTranslation({
     "bring your friends.": "\u5206\u4eab\u7ed9\u4f60\u7684\u597d\u53cb\u3002",
     "lights on.": "\u5f00\u706f",
     "Go Hyper?": "\u8981\u52a0\u901f\u4e48\uff1f",
-    "turning hyper mode speeds up the game to x2 speed. do you want to do that?": "\u5f00\u542f\u52a0\u901f\u6a21\u5f0f\u5c06\u4f1a\u4f7f\u6e38\u620f\u901f\u5ea6\u53d8\u4e3a\u539f\u6709\u76842\u500d\u3002\u4f60\u786e\u5b9a\u8981\u52a0\u901f\u5417\uff1f",
+    "turning hyper mode speeds up the game to x2 speed. do you want to do that?": "开启加速模式会让游戏速度提升到x3倍，你确定要这么做吗？",
     "classic.": "\u539f\u901f",
     "{0} per {1}s": "{0} /{1}\u79d2",
     "sound off.": "\u58f0\u97f3\u5173\u95ed",
