@@ -1022,5 +1022,12 @@ _.setTranslation({
     "the beacon pulses gently as the ship glides through space.<br>coordinates are locked. nothing to do but wait.": "\u5f53\u98de\u8239\u5728\u592a\u7a7a\u4e2d\u98de\u884c\u65f6\uff0c\u4fe1\u6807\u53d1\u51fa\u67d4\u548c\u7684\u8109\u51b2<br>\u5750\u6807\u5df2\u88ab\u9501\u5b9a\u3002\u5269\u4e0b\u7684\u53ea\u6709\u7b49\u5f85",
     "the beacon glows a solid blue, and then goes dim. the ship slows.<br>gradually, the vast wanderer homefleet comes into view.<br>massive worldships drift unnaturally through clouds of debris, scarred and dead.": "\u4fe1\u6807\u53d1\u51fa\u4e00\u9635\u7eaf\u84dd\u7684\u5149\u8292\uff0c\u968f\u540e\u9eef\u6de1\u4e86\u3002\u98de\u8239\u6162\u4e86\u4e0b\u6765<br>\u6e10\u6e10\u5730\uff0c\u6d69\u6d69\u8361\u8361\u7684\u6d41\u6d6a\u8005\u5bb6\u56ed\u8230\u961f\u6620\u5165\u773c\u5e18<br>\u5de8\u5927\u7684\u6bcd\u8230\u4e0d\u81ea\u7136\u5730\u5728\u788e\u7247\u4e91\u4e2d\u6f02\u8fc7\uff0c\u4f24\u75d5\u7d2f\u7d2f\uff0c\u6b7b\u6c14\u6c89\u6c89\u3002",
     "the air is running out.": "\u7a7a\u6c14\u5feb\u7528\u5b8c\u4e86\u3002",
-    "the capsule is cold.": "\u8231\u5185\u5f88\u51b7\u3002"
+    "the capsule is cold.": "\u8231\u5185\u5f88\u51b7\u3002",
+    "hypo blueprint":"恢复液蓝图",
+    "kinetic armour blueprint":"动能装甲蓝图",
+    "disruptor blueprint":"干扰器蓝图",
+    "plasma rifle blueprint":"离子步枪蓝图",
+    "stim blueprint":"兴奋剂蓝图",
+    "glowstone blueprint":"发光石蓝图",
+    "blueprint":"蓝图",
 });
