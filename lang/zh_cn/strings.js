@@ -1030,4 +1030,5 @@ _.setTranslation({
     "stim blueprint":"兴奋剂蓝图",
     "glowstone blueprint":"发光石蓝图",
     "blueprint":"蓝图",
+    "blueprints feed into the fabricator data port. possibilities grow.":"蓝图输入到制造机的数据端口，可以制作的物品增加了。"
 });
