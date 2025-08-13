@@ -357,7 +357,7 @@ msgid "Go Hyper?"
 msgstr ""
 
 #: script/engine.js:496
-msgid "turning hyper mode speeds up the game to x2 speed. do you want to do that?"
+msgid "turning hyper mode speeds up the game to x3 speed. do you want to do that?"
 msgstr ""
 
 #: script/engine.js:519

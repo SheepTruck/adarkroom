@@ -511,7 +511,7 @@ var Room = {
 			$SM.set('game.builder.level', -1);
 		}
 
-		// If this is the first time playing, the fire is dead and it's freezing. 
+		// If this is the first time playing, the fire is dead and it's freezing.
 		// Otherwise grab past save state temp and fire level.
 		$SM.set('game.temperature', $SM.get('game.temperature.value') === undefined ? this.TempEnum.Freezing : $SM.get('game.temperature'));
 		$SM.set('game.fire', $SM.get('game.fire.value') === undefined ? this.FireEnum.Dead : $SM.get('game.fire'));
@@ -601,7 +601,7 @@ var Room = {
 		}
 
 		Engine.moveStoresView(null, transition_diff);
-		
+
 		Room.setMusic();
 	},
 
@@ -831,13 +831,13 @@ var Room = {
 				continue;
 			}
 
-			const good =  
-        Room.Craftables[k] ||
-        Room.TradeGoods[k] ||
-        Room.TradeGoods[k] ||
-        Room.MiscItems[k] ||
-        Fabricator.Craftables[k];
-      const type = good ? good.type : null;
+			const good =
+				Room.Craftables[k] ||
+				Room.TradeGoods[k] ||
+				Room.TradeGoods[k] ||
+				Room.MiscItems[k] ||
+				Fabricator.Craftables[k];
+			const type = good ? good.type : null;
 
 			var location;
 			switch (type) {
@@ -876,27 +876,49 @@ var Room = {
 				$SM.startThieves();
 			}
 
-			if (row.length === 0) {
+			// if (row.length === 0) {
+			// 	row = $('<div>').attr('id', id).addClass('storeRow');
+			// 	$('<div>').addClass('row_key').text(lk).appendTo(row);
+			// 	$('<div>').addClass('row_val').text(Math.floor(num)).appendTo(row);
+			// 	$('<div>').addClass('clear').appendTo(row);
+			// 	var curPrev = null;
+			// 	location.children().each(function (i) {
+			// 		var child = $(this);
+			// 		var cName = child.children('.row_key').text();
+			// 		if (cName < lk) {
+			// 			curPrev = child.attr('id');
+			// 		}
+			// 	});
+			// 	if (curPrev == null) {
+			// 		row.prependTo(location);
+			// 	} else {
+			// 		row.insertAfter(location.find('#' + curPrev));
+			// 	}
+			// 	newRow = true;
+			// } else {
+			// 	$('div#' + row.attr('id') + ' > div.row_val', location).text(Math.floor(num));
+			// }
+			if(row.length == 0 && num > 0) {
 				row = $('<div>').attr('id', id).addClass('storeRow');
-				$('<div>').addClass('row_key').text(lk).appendTo(row);
+				$('<div>').addClass('row_key').text(_(k)).appendTo(row);
 				$('<div>').addClass('row_situation').text('').appendTo(row);
 				$('<div>').addClass('row_val').text(Math.floor(num)).appendTo(row);
 				$('<div>').addClass('clear').appendTo(row);
 				var curPrev = null;
-				location.children().each(function (i) {
+				location.children().each(function(i) {
 					var child = $(this);
-					var cName = child.children('.row_key').text();
-					if (cName < lk) {
-						curPrev = child.attr('id');
+					var cName = child.attr('id').substring(4).replace('-', ' ');
+					if(cName < k && (curPrev == null || cName > curPrev)) {
+						curPrev = cName;
 					}
 				});
-				if (curPrev == null) {
+				if(curPrev == null) {
 					row.prependTo(location);
 				} else {
-					row.insertAfter(location.find('#' + curPrev));
+					row.insertAfter(location.find('#row_' + curPrev.replace(' ', '-')));
 				}
 				newRow = true;
-			} else {
+			} else if(num>= 0){
 				$('div#' + row.attr('id') + ' > div.row_val', location).text(Math.floor(num));
 			}
 		}
@@ -984,8 +1006,10 @@ var Room = {
 				$('<div>').addClass('total row_val').text(Engine.getIncomeMsg(total, totalIncome[storeName].delay)).appendTo(tt);
 				tt.appendTo(el);
 			}
+
 		});
 	},
+
 
 	buy: function (buyBtn) {
 		var thing = $(buyBtn).attr('buildThing');

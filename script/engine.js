@@ -558,7 +558,7 @@
           title: _('Go Hyper?'),
           scenes: {
             start: {
-              text: [_('turning hyper mode speeds up the game to x2 speed. do you want to do that?')],
+              text: [_('turning hyper mode speeds up the game to x3 speed. do you want to do that?')],
               buttons: {
                 'yes': {
                   text: _('yes'),
@@ -834,7 +834,7 @@
     setInterval: function(callback, interval, skipDouble){
       if( Engine.options.doubleTime && !skipDouble ){
         Engine.log('Double time, cutting interval in half');
-        interval /= 2;
+        interval /= 3;
       }
 
       return setInterval(callback, interval);
@@ -845,7 +845,7 @@
 
       if( Engine.options.doubleTime && !skipDouble ){
         Engine.log('Double time, cutting timeout in half');
-        timeout /= 2;
+        timeout /= 3;
       }
 
       return setTimeout(callback, timeout);

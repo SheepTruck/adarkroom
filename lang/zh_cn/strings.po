@@ -364,8 +364,8 @@ msgstr "要加速么？"
 
 #: script/engine.js:527
 msgid ""
-"turning hyper mode speeds up the game to x2 speed. do you want to do that?"
-msgstr "开启加速模式将会使游戏速度变为原有的2倍。你确定要加速吗？"
+"turning hyper mode speeds up the game to x3 speed. do you want to do that?"
+msgstr "开启加速模式将会使游戏速度变为原有的3倍。你确定要加速吗？"
 
 #: script/engine.js:550
 msgid "classic."

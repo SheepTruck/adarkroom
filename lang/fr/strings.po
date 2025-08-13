@@ -368,7 +368,7 @@ msgstr "Passer en Hyper ?"
 
 #: ../../script/engine.js:523
 msgid ""
-"turning hyper mode speeds up the game to x2 speed. do you want to do that?"
+"turning hyper mode speeds up the game to x3 speed. do you want to do that?"
 msgstr ""
 "le mode hyper accélère la vitesse du jeu (2x). est-ce ce que vous souhaitez ?"
 

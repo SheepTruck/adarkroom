@@ -370,7 +370,7 @@ msgstr "Пришвидшити?"
 
 #: ../../script/engine.js:523
 msgid ""
-"turning hyper mode speeds up the game to x2 speed. do you want to do that?"
+"turning hyper mode speeds up the game to x3 speed. do you want to do that?"
 msgstr ""
 "увімкнувши прищвидшений режим підніме швидкість гри в 2 рази. бажаєте "
 "зробити це?"
